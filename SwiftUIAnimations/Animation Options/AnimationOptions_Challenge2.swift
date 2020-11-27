@@ -32,10 +32,8 @@ struct AnimationOptions_Challenge2: View {
                         HStack {
                             Spacer()
                             Button(action: {
-                                withAnimation(.none) {
-                                    start = false
-                                }
-                                DispatchQueue.main.asyncAfter(deadline: .now()+10) {
+                                start = false
+                                DispatchQueue.main.asyncAfter(deadline: .now()+8) {
                                     start = true
                                 }
                             }) {
@@ -50,25 +48,22 @@ struct AnimationOptions_Challenge2: View {
                                             .opacity(start ? 0 : 0.9)
                                             .scaleEffect(start ? 1.8 : 1.1)
                                             .animation(Animation.easeOut(duration: 1)
-                                                        .repeatCount(5).delay(2.7))
+                                                        .repeatCount(5).delay(2.7), value: start)
                                     )
-                                    .rotationEffect(.radians(Double(start ? 0 :  (-30-proxy.frame(in: .local).size.width) / circleWidth )))
-                                    .offset(x: start ? 0 : -30-proxy.frame(in: .local).size.width)
-                                    .animation(Animation.linear(duration: 1).delay(1.5))
                             }
-                            .border(Color.blue)
+                            .rotationEffect(.radians(Double(start ? 0 :  (-30-proxy.frame(in: .local).size.width) / circleWidth )))
+                            .offset(x: start ? 0 : -30-proxy.frame(in: .local).size.width)
+                            .animation(Animation.linear(duration: 1).delay(1.5), value: start)
                         }
-                        .border(Color.gray)
                     }
                     .frame(maxHeight: circleWidth)
-                    .border(Color.yellow)
                 }
                 .padding()
 
                 Text("Welcome!")
                     .foregroundColor(Color("Gold"))
                     .opacity(start ? 1 : 0)
-                    .animation(Animation.easeIn(duration: 1).delay(0.5))
+                    .animation(Animation.easeIn(duration: 1).delay(0.5), value: start)
         }
         .onAppear() {
             start = true
