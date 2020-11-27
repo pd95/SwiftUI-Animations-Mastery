@@ -15,7 +15,7 @@ struct GettingStarted_Challenge2: View {
             SubtitleText("Move the Circle Shape")
             Circle()
                 .foregroundColor(.blue)
-                .offset(x: 0, y: change ? 0 : 450)
+                .offset(x: 0, y: change ? 0 : 350)
                 .frame(width: 100, height: 100, alignment: .center)
                 .animation(.linear)
 

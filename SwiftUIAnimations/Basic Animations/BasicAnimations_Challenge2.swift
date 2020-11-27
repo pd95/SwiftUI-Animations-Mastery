@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BasicAnimations_Challenge2: View {
-    @State private var show = true
+    @State private var show = false
 
     var body: some View {
         VStack {

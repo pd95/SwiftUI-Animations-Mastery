@@ -1,5 +1,5 @@
 //
-//  AnimationOptions_Excercise.swift
+//  AnimationOptions_Exercise.swift
 //  SwiftUIAnimations
 //
 //  Created by Philipp on 27.11.20.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AnimationOptions_Excercise: View {
+struct AnimationOptions_Exercise: View {
 
     @State private var showLogin = false
     @State private var shouldAnimate = true
@@ -78,6 +78,6 @@ struct AnimationOptions_Excercise: View {
 
 struct AnimationOptions_Excercise_Previews: PreviewProvider {
     static var previews: some View {
-        AnimationOptions_Excercise()
+        AnimationOptions_Exercise()
     }
 }

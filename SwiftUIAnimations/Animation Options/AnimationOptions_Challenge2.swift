@@ -56,9 +56,12 @@ struct AnimationOptions_Challenge2: View {
                                     .offset(x: start ? 0 : -30-proxy.frame(in: .local).size.width)
                                     .animation(Animation.linear(duration: 1).delay(1.5))
                             }
+                            .border(Color.blue)
                         }
+                        .border(Color.gray)
                     }
                     .frame(maxHeight: circleWidth)
+                    .border(Color.yellow)
                 }
                 .padding()
 

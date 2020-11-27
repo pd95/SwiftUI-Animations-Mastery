@@ -14,46 +14,65 @@ struct ContentView: View {
                 NavigationLink(
                     destination: GettingStarted_Challenge1(),
                     label: {
-                        Text("GettingStarted_Challenge1")
+                        Text("Getting Started: Challenge 1")
                     }
                 )
                 NavigationLink(
                     destination: GettingStarted_Challenge2(),
                     label: {
-                        Text("GettingStarted_Challenge2")
+                        Text("Getting Started: Challenge 2")
+                    }
+                )
+                NavigationLink(
+                    destination: BasicAnimations_Exercise(),
+                    label: {
+                        Text("Basic Animations: Exercise")
                     }
                 )
                 NavigationLink(
                     destination: BasicAnimations_Challenge1(),
                     label: {
-                        Text("BasicAnimations_Challenge1")
+                        Text("Basic Animations: Challenge 1")
                     }
                 )
                 NavigationLink(
                     destination: BasicAnimations_Challenge2(),
                     label: {
-                        Text("BasicAnimations_Challenge2")
+                        Text("Basic Animations: Challenge 2")
+                    }
+                )
+                NavigationLink(
+                    destination: Triggers_Exercise(),
+                    label: {
+                        Text("Triggers: Exercise")
                     }
                 )
                 NavigationLink(
                     destination: Triggers_Challenge1(),
                     label: {
-                        Text("Triggers_Challenge1")
+                        Text("Triggers: Challenge 1")
+                    }
+                )
+                NavigationLink(
+                    destination: AnimationOptions_Exercise(),
+                    label: {
+                        Text("Animation Options: Exercise")
                     }
                 )
                 NavigationLink(
                     destination: AnimationOptions_Challenge1(),
                     label: {
-                        Text("AnimationOptions_Challenge1")
+                        Text("Animation Options: Challenge 1")
                     }
                 )
                 NavigationLink(
                     destination: AnimationOptions_Challenge2(),
                     label: {
-                        Text("AnimationOptions_Challenge1")
+                        Text("Animation Options: Challenge 2")
                     }
                 )
             }
+            .navigationBarTitle("SwiftUI Animation Mastery", displayMode: .automatic)
         }
     }
 }
