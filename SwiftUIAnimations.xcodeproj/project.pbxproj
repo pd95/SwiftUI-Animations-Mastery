@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1777463B25744BFE0048BD08 /* SpringAnimationOptions_Challenge1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1777463725744BEA0048BD08 /* SpringAnimationOptions_Challenge1.swift */; };
+		1777463E25744C020048BD08 /* SpringAnimationOptions_Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1777462F257446F30048BD08 /* SpringAnimationOptions_Exercise.swift */; };
 		17D6BC4F256F97E100D87934 /* SwiftUIAnimationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6BC4E256F97E100D87934 /* SwiftUIAnimationsApp.swift */; };
 		17D6BC51256F97E100D87934 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6BC50256F97E100D87934 /* ContentView.swift */; };
 		17D6BC53256F97E200D87934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17D6BC52256F97E200D87934 /* Assets.xcassets */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1777462F257446F30048BD08 /* SpringAnimationOptions_Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringAnimationOptions_Exercise.swift; sourceTree = "<group>"; };
+		1777463725744BEA0048BD08 /* SpringAnimationOptions_Challenge1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringAnimationOptions_Challenge1.swift; sourceTree = "<group>"; };
 		17D6BC4B256F97E100D87934 /* SwiftUIAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D6BC4E256F97E100D87934 /* SwiftUIAnimationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationsApp.swift; sourceTree = "<group>"; };
 		17D6BC50256F97E100D87934 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17774632257446FE0048BD08 /* Spring Animation Options */ = {
+			isa = PBXGroup;
+			children = (
+				1777462F257446F30048BD08 /* SpringAnimationOptions_Exercise.swift */,
+				1777463725744BEA0048BD08 /* SpringAnimationOptions_Challenge1.swift */,
+			);
+			path = "Spring Animation Options";
+			sourceTree = "<group>";
+		};
 		17D6BC42256F97E100D87934 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,7 @@
 				17D6BC6D256FA48C00D87934 /* Basic Animations */,
 				17D6BC8225710B0C00D87934 /* Triggers */,
 				17D6BC9925714E4600D87934 /* Animation Options */,
+				17774632257446FE0048BD08 /* Spring Animation Options */,
 				17D6BC52256F97E200D87934 /* Assets.xcassets */,
 				17D6BC57256F97E200D87934 /* Info.plist */,
 				17D6BC54256F97E200D87934 /* Preview Content */,
@@ -209,10 +223,12 @@
 				17D6BCA72571985200D87934 /* AnimationOptions_Challenge2.swift in Sources */,
 				17D6BC6B256FA17400D87934 /* BasicAnimations_Exercise.swift in Sources */,
 				17D6BC942571337500D87934 /* Triggers_Challenge1.swift in Sources */,
+				1777463B25744BFE0048BD08 /* SpringAnimationOptions_Challenge1.swift in Sources */,
 				17D6BC9D25715A1300D87934 /* AnimationOptions_Exercise.swift in Sources */,
 				17D6BC71256FA4A700D87934 /* BasicAnimations_Challenge1.swift in Sources */,
 				17D6BC5F256F97F200D87934 /* GettingStarted_Challenge1.swift in Sources */,
 				17D6BCA3257164DD00D87934 /* AnimationOptions_Challenge1.swift in Sources */,
+				1777463E25744C020048BD08 /* SpringAnimationOptions_Exercise.swift in Sources */,
 				17D6BC51256F97E100D87934 /* ContentView.swift in Sources */,
 				17D6BC64256F996400D87934 /* HelperViews.swift in Sources */,
 				17D6BC4F256F97E100D87934 /* SwiftUIAnimationsApp.swift in Sources */,
