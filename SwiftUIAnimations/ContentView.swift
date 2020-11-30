@@ -110,6 +110,21 @@ struct ContentView: View {
                         }
                     )
                 }
+
+                Group {
+                    NavigationLink(
+                        destination: CustomTimingCurve_Exercise(),
+                        label: {
+                            Text("Custom Timing Curve: Exercise")
+                        }
+                    )
+                    NavigationLink(
+                        destination: CustomTimingCurve_Challenge1(),
+                        label: {
+                            Text("Custom Timing Curve: Challenge 1")
+                        }
+                    )
+                }
             }
             .navigationBarTitle("SwiftUI Animation Mastery", displayMode: .automatic)
         }

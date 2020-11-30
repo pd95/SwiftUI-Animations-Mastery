@@ -27,6 +27,9 @@
 		17D6BC9D25715A1300D87934 /* AnimationOptions_Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6BC9625714E4100D87934 /* AnimationOptions_Exercise.swift */; };
 		17D6BCA3257164DD00D87934 /* AnimationOptions_Challenge1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6BC9F257164CB00D87934 /* AnimationOptions_Challenge1.swift */; };
 		17D6BCA72571985200D87934 /* AnimationOptions_Challenge2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6BCA62571985200D87934 /* AnimationOptions_Challenge2.swift */; };
+		17D86AAD25755EF1004D34D7 /* CustomTimingCurve_Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D86AA725755D84004D34D7 /* CustomTimingCurve_Exercise.swift */; };
+		17D86AB0257562C8004D34D7 /* ButtonStyleLightOutline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D86AAF257562C8004D34D7 /* ButtonStyleLightOutline.swift */; };
+		17D86AB32575698E004D34D7 /* CustomTimingCurve_Challenge1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D86AB22575698E004D34D7 /* CustomTimingCurve_Challenge1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		17D6BC9625714E4100D87934 /* AnimationOptions_Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationOptions_Exercise.swift; sourceTree = "<group>"; };
 		17D6BC9F257164CB00D87934 /* AnimationOptions_Challenge1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationOptions_Challenge1.swift; sourceTree = "<group>"; };
 		17D6BCA62571985200D87934 /* AnimationOptions_Challenge2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationOptions_Challenge2.swift; sourceTree = "<group>"; };
+		17D86AA725755D84004D34D7 /* CustomTimingCurve_Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTimingCurve_Exercise.swift; sourceTree = "<group>"; };
+		17D86AAF257562C8004D34D7 /* ButtonStyleLightOutline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleLightOutline.swift; sourceTree = "<group>"; };
+		17D86AB22575698E004D34D7 /* CustomTimingCurve_Challenge1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTimingCurve_Challenge1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 				17D6BC9925714E4600D87934 /* Animation Options */,
 				17774632257446FE0048BD08 /* Spring Animation Options */,
 				177746432574F6730048BD08 /* Transitions */,
+				17D86AAA25755DB0004D34D7 /* Custom Timing Curve */,
 				17D6BC52256F97E200D87934 /* Assets.xcassets */,
 				17D6BC57256F97E200D87934 /* Info.plist */,
 				17D6BC54256F97E200D87934 /* Preview Content */,
@@ -165,6 +172,16 @@
 			path = "Animation Options";
 			sourceTree = "<group>";
 		};
+		17D86AAA25755DB0004D34D7 /* Custom Timing Curve */ = {
+			isa = PBXGroup;
+			children = (
+				17D86AA725755D84004D34D7 /* CustomTimingCurve_Exercise.swift */,
+				17D86AAF257562C8004D34D7 /* ButtonStyleLightOutline.swift */,
+				17D86AB22575698E004D34D7 /* CustomTimingCurve_Challenge1.swift */,
+			);
+			path = "Custom Timing Curve";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,7 +216,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 17D6BC46256F97E100D87934 /* Build configuration list for PBXProject "SwiftUIAnimations" */;
+			buildConfigurationList = 17D6BC46256F97E100D87934 /* Build configuration list for PBXProject "MySwiftUIAnimations" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -237,7 +254,9 @@
 				17D6BC7D256FA86200D87934 /* BasicAnimations_Challenge2.swift in Sources */,
 				17D6BC67256F9AA600D87934 /* GettingStarted_Challenge2.swift in Sources */,
 				17D6BC8525710BD500D87934 /* Triggers_Exercise.swift in Sources */,
+				17D86AAD25755EF1004D34D7 /* CustomTimingCurve_Exercise.swift in Sources */,
 				17D6BCA72571985200D87934 /* AnimationOptions_Challenge2.swift in Sources */,
+				17D86AB32575698E004D34D7 /* CustomTimingCurve_Challenge1.swift in Sources */,
 				17D6BC6B256FA17400D87934 /* BasicAnimations_Exercise.swift in Sources */,
 				17D6BC942571337500D87934 /* Triggers_Challenge1.swift in Sources */,
 				172137452575237A0072A077 /* Transitions_Challenge1.swift in Sources */,
@@ -250,6 +269,7 @@
 				1721374825752AF90072A077 /* Transitions_Challenge2.swift in Sources */,
 				1777463E25744C020048BD08 /* SpringAnimationOptions_Exercise.swift in Sources */,
 				17D6BC51256F97E100D87934 /* ContentView.swift in Sources */,
+				17D86AB0257562C8004D34D7 /* ButtonStyleLightOutline.swift in Sources */,
 				17D6BC64256F996400D87934 /* HelperViews.swift in Sources */,
 				17D6BC4F256F97E100D87934 /* SwiftUIAnimationsApp.swift in Sources */,
 			);
@@ -419,7 +439,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		17D6BC46256F97E100D87934 /* Build configuration list for PBXProject "SwiftUIAnimations" */ = {
+		17D6BC46256F97E100D87934 /* Build configuration list for PBXProject "MySwiftUIAnimations" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				17D6BC58256F97E200D87934 /* Debug */,
