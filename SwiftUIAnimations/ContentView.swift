@@ -24,6 +24,7 @@ struct ContentView: View {
                             Text("Getting Started: Challenge 2")
                         }
                     )
+
                     NavigationLink(
                         destination: BasicAnimations_Exercise(),
                         label: {
@@ -42,6 +43,7 @@ struct ContentView: View {
                             Text("Basic Animations: Challenge 2")
                         }
                     )
+
                     NavigationLink(
                         destination: Triggers_Exercise(),
                         label: {
@@ -86,6 +88,25 @@ struct ContentView: View {
                         destination: SpringAnimationOptions_Challenge1(),
                         label: {
                             Text("Spring Animation Options: Challenge 1")
+                        }
+                    )
+
+                    NavigationLink(
+                        destination: Transitions_Exercise(),
+                        label: {
+                            Text("Transitions: Exercise")
+                        }
+                    )
+                    NavigationLink(
+                        destination: Transitions_Challenge1(),
+                        label: {
+                            Text("Transitions: Challenge 1")
+                        }
+                    )
+                    NavigationLink(
+                        destination: Transitions_Challenge2(),
+                        label: {
+                            Text("Transitions: Challenge 2")
                         }
                     )
                 }
