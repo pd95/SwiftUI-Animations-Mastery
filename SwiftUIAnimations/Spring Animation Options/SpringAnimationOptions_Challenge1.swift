@@ -11,8 +11,8 @@ struct SpringAnimationOptions_Challenge1: View {
 
     var imageNames = ["undraw_tutorial_video_vtd1", "undraw_source_code_xx2e", "undraw_winners_ao2o"]
     var text = ["Learn by watching videos and looking at code.",
-                "Step-by-step exercises,\nquizzes and practical\nchallenges.",
-                "Master SwiftUI Animations\nToday!"]
+                "Step-by-step exercises, quizzes and practical challenges.",
+                "Master SwiftUI Animations Today!"]
 
     @State private var selected = 0
 
@@ -34,8 +34,8 @@ struct SpringAnimationOptions_Challenge1: View {
                 Spacer()
 
                 GeometryReader { proxy in
-                    let size = proxy.frame(in: .global).size
-                    HStack {
+                    let size = proxy.frame(in: .local).size
+                    HStack(spacing: 0) {
                         ForEach(imageNames.indices) { i in
                             VStack {
                                 Image(imageNames[i])
@@ -44,12 +44,14 @@ struct SpringAnimationOptions_Challenge1: View {
                                     .animation(Animation.interpolatingSpring(stiffness: 10, damping: 5, initialVelocity: 3))
 
                                 Text(text[i])
+                                    .fixedSize(horizontal: false, vertical: true)
                                     .font(.title)
                                     .foregroundColor(Color("LightAccent2"))
                                     .multilineTextAlignment(.center)
                                     .animation(Animation.interpolatingSpring(stiffness: 10, damping: 5, initialVelocity: 3).delay(0.1))
                             }
-                            .padding(40)
+                            .padding(30)
+                            .frame(maxWidth: size.width)
                         }
                     }
                     .offset(x: -CGFloat(selected) * size.width)
