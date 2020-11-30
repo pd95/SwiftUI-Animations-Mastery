@@ -75,6 +75,19 @@ struct ContentView: View {
                             Text("Animation Options: Challenge 2")
                         }
                     )
+
+                    NavigationLink(
+                        destination: SpringAnimationOptions_Exercise(),
+                        label: {
+                            Text("Spring Animation Options: Exercise")
+                        }
+                    )
+                    NavigationLink(
+                        destination: SpringAnimationOptions_Challenge1(),
+                        label: {
+                            Text("Spring Animation Options: Challenge 1")
+                        }
+                    )
                 }
             }
             .navigationBarTitle("SwiftUI Animation Mastery", displayMode: .automatic)
