@@ -35,26 +35,25 @@ struct SpringAnimationOptions_Challenge1: View {
 
                 GeometryReader { proxy in
                     let size = proxy.frame(in: .global).size
-                    ZStack {
+                    HStack {
                         ForEach(imageNames.indices) { i in
                             VStack {
                                 Image(imageNames[i])
                                     .resizable()
                                     .scaledToFit()
-                                    .offset(x: CGFloat(i - selected) * size.width)
                                     .animation(Animation.interpolatingSpring(stiffness: 10, damping: 5, initialVelocity: 3))
 
                                 Text(text[i])
                                     .font(.title)
                                     .foregroundColor(Color("LightAccent2"))
                                     .multilineTextAlignment(.center)
-                                    .offset(x: CGFloat(i - selected) * size.width)
                                     .animation(Animation.interpolatingSpring(stiffness: 10, damping: 5, initialVelocity: 3).delay(0.1))
                             }
                             .padding(40)
-                            .frame(width: size.width)
                         }
                     }
+                    .offset(x: -CGFloat(selected) * size.width)
+                    .frame(width: size.width * 3)
                 }
 
                 Spacer()
