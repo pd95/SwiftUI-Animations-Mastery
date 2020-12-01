@@ -1,5 +1,5 @@
 //
-//  ParksListView.swift
+//  CardDetailView.swift
 //  SwiftUIAnimations
 //
 //  Created by Philipp on 01.12.20.
@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct ParksListView: View {
+struct CardDetailView: View {
+    let card: Card
     var parentNamespace: Namespace.ID
     @Binding var showView: Bool
 
@@ -24,9 +25,8 @@ struct ParksListView: View {
                         ParksRowView(namespace: namespace, selectedPark: $selectedPark, park: park)
                             .animation(.easeOut)
                     }
+                    .opacity(showList ? 1 : 0)
                 }
-                .opacity(showList ? 1 : 0)
-                .animation(.easeIn)
             }
         }
         .edgesIgnoringSafeArea(.top)
@@ -38,6 +38,12 @@ struct ParksListView: View {
                 }
             }
         )
+        .background(
+            RoundedCorner(cornerRadius: 25, corners: card.alignment == .leading ? .topRight : .topLeft)
+                .fill(card.backgroundColor)
+                .matchedGeometryEffect(id: "\(card.title).background", in: parentNamespace)
+                .edgesIgnoringSafeArea(.all)
+        )
         .onAppear() {
             showList = false
             DispatchQueue.main.asyncAfter(deadline: .now()+1) {
@@ -46,6 +52,9 @@ struct ParksListView: View {
                 }
             }
         }
+        .onDisappear() {
+            showList = false
+        }
     }
 
     var headerView: some View {
@@ -53,14 +62,15 @@ struct ParksListView: View {
             Color(.systemBackground)
                 .opacity(0.8)
 
-            Text("UTAH  NATIONAL  PARKS")
+            Text("\(card.title): \(card.fact)")
                 .font(.body)
                 .fontWeight(.black)
                 .padding()
                 .frame(maxWidth: .infinity)
+                .matchedGeometryEffect(id: "\(card.title).title", in: parentNamespace)
                 .overlay(
                     Button(action: {
-                        showList = false
+                        //showList = false
                         showView = false
                     }, label: {
                         Image(systemName: "xmark")
@@ -81,10 +91,10 @@ struct ParksListView: View {
     }
 }
 
-struct ParksListView_Previews: PreviewProvider {
+struct CardDetailView_Previews: PreviewProvider {
     @Namespace static var namespace
     static var previews: some View {
-        ParksListView(parentNamespace: namespace, showView: .constant(true))
+        CardDetailView(card: Card.allCards.first!, parentNamespace: namespace, showView: .constant(true))
             .environment(\.colorScheme, .dark)
     }
 }

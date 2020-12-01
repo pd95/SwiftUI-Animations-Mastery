@@ -38,7 +38,8 @@
 		17D86AC825764402004D34D7 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D86AC725764402004D34D7 /* RoundedCorner.swift */; };
 		17D86ACB25764453004D34D7 /* MatchedGeometryEffect_Challenge1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D86ACA25764453004D34D7 /* MatchedGeometryEffect_Challenge1.swift */; };
 		17D86ACE25764C2B004D34D7 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D86ACD25764C2B004D34D7 /* CardView.swift */; };
-		17D86AD32576B5D8004D34D7 /* ParksListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D86AD22576B5D8004D34D7 /* ParksListView.swift */; };
+		17D86AD32576B5D8004D34D7 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D86AD22576B5D8004D34D7 /* CardDetailView.swift */; };
+		17D86ADA25770717004D34D7 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D86AD925770717004D34D7 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,7 +77,8 @@
 		17D86ACA25764453004D34D7 /* MatchedGeometryEffect_Challenge1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffect_Challenge1.swift; sourceTree = "<group>"; };
 		17D86ACD25764C2B004D34D7 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		17D86AD02576AA9A004D34D7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		17D86AD22576B5D8004D34D7 /* ParksListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksListView.swift; sourceTree = "<group>"; };
+		17D86AD22576B5D8004D34D7 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
+		17D86AD925770717004D34D7 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,14 +208,15 @@
 		17D86AB825759BD4004D34D7 /* Matched Geometry Effect */ = {
 			isa = PBXGroup;
 			children = (
+				17D86ABA25759C98004D34D7 /* Data.swift */,
 				17D86AB525759BC8004D34D7 /* MatchedGeometryEffect_Exercise.swift */,
-				17D86ACA25764453004D34D7 /* MatchedGeometryEffect_Challenge1.swift */,
-				17D86AD22576B5D8004D34D7 /* ParksListView.swift */,
 				17D86AC325763F57004D34D7 /* ParksSectionHeaderView.swift */,
 				17D86AC025763ED3004D34D7 /* ParksRowView.swift */,
 				17D86ABD25761748004D34D7 /* ParkDetailView.swift */,
+				17D86ACA25764453004D34D7 /* MatchedGeometryEffect_Challenge1.swift */,
 				17D86ACD25764C2B004D34D7 /* CardView.swift */,
-				17D86ABA25759C98004D34D7 /* Data.swift */,
+				17D86AD22576B5D8004D34D7 /* CardDetailView.swift */,
+				17D86AD925770717004D34D7 /* Card.swift */,
 				17D86AC725764402004D34D7 /* RoundedCorner.swift */,
 			);
 			path = "Matched Geometry Effect";
@@ -294,8 +297,9 @@
 				17D86ABE25761748004D34D7 /* ParkDetailView.swift in Sources */,
 				17D86AAD25755EF1004D34D7 /* CustomTimingCurve_Exercise.swift in Sources */,
 				17D6BCA72571985200D87934 /* AnimationOptions_Challenge2.swift in Sources */,
-				17D86AD32576B5D8004D34D7 /* ParksListView.swift in Sources */,
+				17D86AD32576B5D8004D34D7 /* CardDetailView.swift in Sources */,
 				17D86AB32575698E004D34D7 /* CustomTimingCurve_Challenge1.swift in Sources */,
+				17D86ADA25770717004D34D7 /* Card.swift in Sources */,
 				17D6BC6B256FA17400D87934 /* BasicAnimations_Exercise.swift in Sources */,
 				17D6BC942571337500D87934 /* Triggers_Challenge1.swift in Sources */,
 				172137452575237A0072A077 /* Transitions_Challenge1.swift in Sources */,

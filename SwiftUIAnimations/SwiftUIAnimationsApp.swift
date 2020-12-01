@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUIAnimationsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MatchedGeometryEffect_Challenge1()
         }
     }
 }

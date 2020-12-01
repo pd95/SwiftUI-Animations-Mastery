@@ -8,51 +8,49 @@
 import SwiftUI
 
 struct CardView: View {
-    let title: String
-    let fact: String
-    let backgroundColor: Color
-    let width: CGFloat
-    let height: CGFloat
-    let alignment: HorizontalAlignment
+    let card: Card
 
-    @Binding var isSelected: Bool
+    @Binding var selectedCard: Card.ID?
     let parentNamespace: Namespace.ID
 
-    init(title: String, fact: String, backgroundColor: Color, width: CGFloat, height: CGFloat, alignment: HorizontalAlignment, isSelected: Binding<Bool>, namespace: Namespace.ID) {
-        self.title = title
-        self.fact = fact
-        self.backgroundColor = backgroundColor
-        self.width = width
-        self.height = height
-        self.alignment = alignment
-        self._isSelected = isSelected
-        self.parentNamespace = namespace
+    init(card: Card, selectedCard: Binding<Card.ID?>, parentNamespace: Namespace.ID) {
+        self.card = card
+        self._selectedCard = selectedCard
+        self.parentNamespace = parentNamespace
     }
+
 
     var body: some View {
         ZStack(alignment: .topLeading) {
-            RoundedCorner(cornerRadius: 25, corners: alignment == .leading ? .topRight : .topLeft)
-                .fill(backgroundColor)
-                .matchedGeometryEffect(id: "\(title).background", in: parentNamespace)
+            RoundedCorner(cornerRadius: 25, corners: card.alignment == .leading ? .topRight : .topLeft)
+                .fill(card.backgroundColor)
+                .matchedGeometryEffect(id: "\(card.title).background", in: parentNamespace)
                 .edgesIgnoringSafeArea(.all)
 
-            VStack(alignment: alignment) {
+            VStack(alignment: card.alignment) {
                 HStack(alignment: .lastTextBaseline) {
-                    Text(title)
+                    Text(card.title)
                         .font(.title2)
                         .fontWeight(.black)
-                    Text(fact)
+                    Text(card.fact)
                 }
+                .matchedGeometryEffect(id: "\(card.title).title", in: parentNamespace)
                 .padding(30)
+                .transition(.opacity)
                 .animation(.default)
             }
         }
-        .frame(width: width, height: height, alignment: .topLeading)
+        .frame(width: card.width, height: card.height, alignment: .topLeading)
         .onTapGesture {
-            isSelected.toggle()
+            if selectedCard == nil {
+                selectedCard = card.id
+            }
+            else {
+                selectedCard = nil
+            }
         }
         .shadow(radius: 5)
-        .frame(maxWidth: .infinity, alignment: alignment == .leading ? .leading : .trailing)
+        .frame(maxWidth: .infinity, alignment: card.alignment == .leading ? .leading : .trailing)
     }
 }
 
@@ -60,13 +58,14 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     @Namespace static var namespace
+    @State static var selectedCard: Card.ID?
     static var previews: some View {
         VStack {
             Spacer()
             ZStack(alignment: .bottom) {
-                CardView(title: "PARKS", fact: "8 parks", backgroundColor: Color(#colorLiteral(red: 0.3371933103, green: 0.4313960373, blue: 0.3136832118, alpha: 1)), width: 300, height: 400, alignment: .leading, isSelected: .constant(false), namespace: namespace)
-                CardView(title: "TRAILS", fact: "207 trails", backgroundColor: Color(#colorLiteral(red: 0.6117665172, green: 0.2980564833, blue: 0.2313555181, alpha: 1)), width: 300, height: 250, alignment: .trailing, isSelected: .constant(false), namespace: namespace)
-                CardView(title: "CAMPSITES", fact: "121 campsites", backgroundColor: Color(#colorLiteral(red: 0.6980050802, green: 0.5764998198, blue: 0.3293782473, alpha: 1)), width: 320, height: 100, alignment: .leading, isSelected: .constant(false), namespace: namespace)
+                ForEach(Card.allCards) { card in
+                    CardView(card: card, selectedCard: $selectedCard, parentNamespace: namespace)
+                }
             }
         }
     }
