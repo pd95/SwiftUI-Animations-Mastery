@@ -30,6 +30,14 @@
 		17D86AAD25755EF1004D34D7 /* CustomTimingCurve_Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D86AA725755D84004D34D7 /* CustomTimingCurve_Exercise.swift */; };
 		17D86AB0257562C8004D34D7 /* ButtonStyleLightOutline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D86AAF257562C8004D34D7 /* ButtonStyleLightOutline.swift */; };
 		17D86AB32575698E004D34D7 /* CustomTimingCurve_Challenge1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D86AB22575698E004D34D7 /* CustomTimingCurve_Challenge1.swift */; };
+		17D86AB625759BC8004D34D7 /* MatchedGeometryEffect_Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D86AB525759BC8004D34D7 /* MatchedGeometryEffect_Exercise.swift */; };
+		17D86ABB25759C98004D34D7 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D86ABA25759C98004D34D7 /* Data.swift */; };
+		17D86ABE25761748004D34D7 /* ParkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D86ABD25761748004D34D7 /* ParkDetailView.swift */; };
+		17D86AC125763ED3004D34D7 /* ParksRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D86AC025763ED3004D34D7 /* ParksRowView.swift */; };
+		17D86AC425763F57004D34D7 /* ParksSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D86AC325763F57004D34D7 /* ParksSectionHeaderView.swift */; };
+		17D86AC825764402004D34D7 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D86AC725764402004D34D7 /* RoundedCorner.swift */; };
+		17D86ACB25764453004D34D7 /* MatchedGeometryEffect_Challenge1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D86ACA25764453004D34D7 /* MatchedGeometryEffect_Challenge1.swift */; };
+		17D86ACE25764C2B004D34D7 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D86ACD25764C2B004D34D7 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +66,14 @@
 		17D86AA725755D84004D34D7 /* CustomTimingCurve_Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTimingCurve_Exercise.swift; sourceTree = "<group>"; };
 		17D86AAF257562C8004D34D7 /* ButtonStyleLightOutline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleLightOutline.swift; sourceTree = "<group>"; };
 		17D86AB22575698E004D34D7 /* CustomTimingCurve_Challenge1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTimingCurve_Challenge1.swift; sourceTree = "<group>"; };
+		17D86AB525759BC8004D34D7 /* MatchedGeometryEffect_Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffect_Exercise.swift; sourceTree = "<group>"; };
+		17D86ABA25759C98004D34D7 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		17D86ABD25761748004D34D7 /* ParkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetailView.swift; sourceTree = "<group>"; };
+		17D86AC025763ED3004D34D7 /* ParksRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksRowView.swift; sourceTree = "<group>"; };
+		17D86AC325763F57004D34D7 /* ParksSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksSectionHeaderView.swift; sourceTree = "<group>"; };
+		17D86AC725764402004D34D7 /* RoundedCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		17D86ACA25764453004D34D7 /* MatchedGeometryEffect_Challenge1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffect_Challenge1.swift; sourceTree = "<group>"; };
+		17D86ACD25764C2B004D34D7 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +137,7 @@
 				17D86AAA25755DB0004D34D7 /* Custom Timing Curve */,
 				17D6BC52256F97E200D87934 /* Assets.xcassets */,
 				17D6BC57256F97E200D87934 /* Info.plist */,
+				17D86AB825759BD4004D34D7 /* Matched Geometry Effect */,
 				17D6BC54256F97E200D87934 /* Preview Content */,
 			);
 			path = SwiftUIAnimations;
@@ -180,6 +197,21 @@
 				17D86AB22575698E004D34D7 /* CustomTimingCurve_Challenge1.swift */,
 			);
 			path = "Custom Timing Curve";
+			sourceTree = "<group>";
+		};
+		17D86AB825759BD4004D34D7 /* Matched Geometry Effect */ = {
+			isa = PBXGroup;
+			children = (
+				17D86AB525759BC8004D34D7 /* MatchedGeometryEffect_Exercise.swift */,
+				17D86ACA25764453004D34D7 /* MatchedGeometryEffect_Challenge1.swift */,
+				17D86AC325763F57004D34D7 /* ParksSectionHeaderView.swift */,
+				17D86AC025763ED3004D34D7 /* ParksRowView.swift */,
+				17D86ABD25761748004D34D7 /* ParkDetailView.swift */,
+				17D86ACD25764C2B004D34D7 /* CardView.swift */,
+				17D86ABA25759C98004D34D7 /* Data.swift */,
+				17D86AC725764402004D34D7 /* RoundedCorner.swift */,
+			);
+			path = "Matched Geometry Effect";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +286,7 @@
 				17D6BC7D256FA86200D87934 /* BasicAnimations_Challenge2.swift in Sources */,
 				17D6BC67256F9AA600D87934 /* GettingStarted_Challenge2.swift in Sources */,
 				17D6BC8525710BD500D87934 /* Triggers_Exercise.swift in Sources */,
+				17D86ABE25761748004D34D7 /* ParkDetailView.swift in Sources */,
 				17D86AAD25755EF1004D34D7 /* CustomTimingCurve_Exercise.swift in Sources */,
 				17D6BCA72571985200D87934 /* AnimationOptions_Challenge2.swift in Sources */,
 				17D86AB32575698E004D34D7 /* CustomTimingCurve_Challenge1.swift in Sources */,
@@ -264,9 +297,16 @@
 				17D6BC9D25715A1300D87934 /* AnimationOptions_Exercise.swift in Sources */,
 				17D6BC71256FA4A700D87934 /* BasicAnimations_Challenge1.swift in Sources */,
 				17D6BC5F256F97F200D87934 /* GettingStarted_Challenge1.swift in Sources */,
+				17D86ABB25759C98004D34D7 /* Data.swift in Sources */,
+				17D86ACE25764C2B004D34D7 /* CardView.swift in Sources */,
 				177746412574F66E0048BD08 /* Transitions_Exercise.swift in Sources */,
 				17D6BCA3257164DD00D87934 /* AnimationOptions_Challenge1.swift in Sources */,
+				17D86AB625759BC8004D34D7 /* MatchedGeometryEffect_Exercise.swift in Sources */,
+				17D86AC125763ED3004D34D7 /* ParksRowView.swift in Sources */,
+				17D86ACB25764453004D34D7 /* MatchedGeometryEffect_Challenge1.swift in Sources */,
+				17D86AC425763F57004D34D7 /* ParksSectionHeaderView.swift in Sources */,
 				1721374825752AF90072A077 /* Transitions_Challenge2.swift in Sources */,
+				17D86AC825764402004D34D7 /* RoundedCorner.swift in Sources */,
 				1777463E25744C020048BD08 /* SpringAnimationOptions_Exercise.swift in Sources */,
 				17D6BC51256F97E100D87934 /* ContentView.swift in Sources */,
 				17D86AB0257562C8004D34D7 /* ButtonStyleLightOutline.swift in Sources */,

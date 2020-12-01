@@ -124,6 +124,13 @@ struct ContentView: View {
                             Text("Custom Timing Curve: Challenge 1")
                         }
                     )
+
+                    NavigationLink(
+                        destination: MatchedGeometryEffect_Exercise(),
+                        label: {
+                            Text("Matched Geometry Effect: Exercise")
+                        }
+                    )
                 }
             }
             .navigationBarTitle("SwiftUI Animation Mastery", displayMode: .automatic)
