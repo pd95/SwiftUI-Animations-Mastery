@@ -58,6 +58,7 @@ struct MatchedGeometryEffect_Challenge1: View {
                 Spacer()
             }
             .padding()
+            .foregroundColor(.white)
 
             ForEach(cards) { (card: Card) in
                 if selectedCard == card.id {
@@ -75,11 +76,10 @@ struct MatchedGeometryEffect_Challenge1: View {
                     CardView(card: card, selectedCard: $selectedCard, parentNamespace: namespace)
                         .offset(y: selectedCard == nil ? 0 : card.height+50)
                         .animation(.easeIn(duration: 0.3))
+                        .foregroundColor(.white)
                 }
             }
         }
-        .accentColor(.gray)
-        .foregroundColor(.white)
         .edgesIgnoringSafeArea(.bottom)
     }
 }
@@ -87,6 +87,6 @@ struct MatchedGeometryEffect_Challenge1: View {
 struct MatchedGeometryEffect_Challenge1_Previews: PreviewProvider {
     static var previews: some View {
         MatchedGeometryEffect_Challenge1()
-//            .environment(\.colorScheme, .dark)
+            .environment(\.colorScheme, .dark)
     }
 }
