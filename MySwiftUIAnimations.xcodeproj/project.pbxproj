@@ -74,6 +74,7 @@
 		17D86AC725764402004D34D7 /* RoundedCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		17D86ACA25764453004D34D7 /* MatchedGeometryEffect_Challenge1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffect_Challenge1.swift; sourceTree = "<group>"; };
 		17D86ACD25764C2B004D34D7 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		17D86AD02576AA9A004D34D7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +110,7 @@
 		17D6BC42256F97E100D87934 = {
 			isa = PBXGroup;
 			children = (
+				17D86AD02576AA9A004D34D7 /* README.md */,
 				17D6BC4D256F97E100D87934 /* SwiftUIAnimations */,
 				17D6BC4C256F97E100D87934 /* Products */,
 			);
