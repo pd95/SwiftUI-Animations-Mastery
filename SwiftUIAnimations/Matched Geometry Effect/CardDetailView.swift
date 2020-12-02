@@ -20,21 +20,22 @@ struct CardDetailView: View {
     var body: some View {
         ScrollView {
             LazyVStack(spacing: 12, pinnedViews: .sectionHeaders) {
-                Section(header: headerView) {
-                    ForEach(parks) { park in
-                        ParksRowView(namespace: namespace, selectedPark: $selectedPark, park: park)
-                            .animation(.easeOut)
-                    }
-                    .opacity(showList ? 1 : 0)
+                ForEach(parks) { park in
+                    ParksRowView(namespace: namespace, selectedPark: $selectedPark, park: park)
+                        .animation(.easeOut)
                 }
+                .opacity(showList ? 1 : 0)
             }
+            .padding(.top, 60)
         }
-        .edgesIgnoringSafeArea(.top)
         .overlay(
             Group {
                 if let park = selectedPark {
                     ParkDetailView(namespace: namespace, selectedPark: $selectedPark, park: park)
                         .animation(.easeOut)
+                }
+                else {
+                    headerView
                 }
             }
         )
@@ -58,10 +59,7 @@ struct CardDetailView: View {
     }
 
     var headerView: some View {
-        ZStack(alignment: .bottom) {
-            Color(.systemBackground)
-                .opacity(0.8)
-
+        VStack {
             Text("\(card.title): \(card.fact)")
                 .font(.body)
                 .fontWeight(.black)
@@ -85,8 +83,14 @@ struct CardDetailView: View {
                     .padding(.leading, 6)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 )
-                .frame(height: 100, alignment: .bottom)
+                .background(
+                    Color(.systemBackground)
+                        .opacity(0.8)
+                        .edgesIgnoringSafeArea(.top)
+                )
                 .foregroundColor(.primary)
+
+            Spacer()
         }
     }
 }

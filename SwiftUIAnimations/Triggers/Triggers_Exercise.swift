@@ -53,12 +53,13 @@ struct Triggers_Exercise: View {
                     }
                     .frame(height: 300)
                     .background(Color.white)
+                    .foregroundColor(.black)
                     .cornerRadius(20)
                     .shadow(radius: 20)
                     .padding(.horizontal, 25)
                     .offset(popupOffset)
                     .gesture(
-                        DragGesture(minimumDistance: 100)
+                        DragGesture(minimumDistance: 30)
                             .updating($popupOffset, body: { (value, popupOffset, transaction) in
                                 popupOffset = value.translation
                             })

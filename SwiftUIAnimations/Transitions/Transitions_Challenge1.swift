@@ -46,6 +46,7 @@ struct Transitions_Challenge1: View {
                         .animation(Animation.easeOut(duration: 1).delay(0.6))
                 }
             }
+            .padding(.top)
         }
         .accentColor(Color("Gold"))
         .onAppear() {

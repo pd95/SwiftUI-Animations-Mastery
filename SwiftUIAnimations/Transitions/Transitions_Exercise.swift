@@ -14,9 +14,9 @@ struct Transitions_Exercise: View {
     var body: some View {
         ZStack {
             Color("Background3")
+                .edgesIgnoringSafeArea(.all)
 
             VStack(spacing: 60) {
-                Spacer()
 
                 if step1 {
                     Text("Ready to travel?")
@@ -35,7 +35,7 @@ struct Transitions_Exercise: View {
 
                         Capsule()
                             .fill(Color("Secondary3"))
-                            .frame(height: 100)
+                            .frame(height: 90)
                             .offset(x: -50)
                             .animation(.easeIn(duration: 0.6))
                             .overlay(
@@ -48,6 +48,8 @@ struct Transitions_Exercise: View {
                 }
                 Spacer()
             }
+            .padding()
+
             VStack(spacing: 5) {
                 if step1 == false {
                     Text("Where do you want to go?")
@@ -75,7 +77,7 @@ struct Transitions_Exercise: View {
                         .animation(.easeOut(duration: 0.8))
                 }
             }
-            .padding(.top, 40)
+            .padding()
 
             VStack {
                 Spacer()
@@ -99,11 +101,10 @@ struct Transitions_Exercise: View {
                 .font(.system(size: 50))
                 .animation(.easeOut(duration: 1))
             }
-            .padding(.bottom, 75)
+            .padding(.bottom, 40)
         }
         .font(.largeTitle)
         .accentColor(Color("Accent3"))
-        .edgesIgnoringSafeArea(.all)
     }
 }
 
@@ -139,7 +140,10 @@ struct TripDetailsView: View {
             })
         }
         .padding(25)
-        .background(RoundedRectangle(cornerRadius: 10))
+        .background(
+            RoundedRectangle(cornerRadius: 10)
+                .fill(Color("Secondary3"))
+        )
         .accentColor(Color("Accent3"))
         .padding(40)
         .font(.body)

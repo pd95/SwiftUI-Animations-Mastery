@@ -29,7 +29,7 @@ struct Triggers_Challenge1: View {
                     .aspectRatio(contentMode: .fill)
                     .cornerRadius(20)
                     .padding(10)
-                    .frame(width: proxy.size.width, height: 200 + textOffset.height + (showText ? 0 : shrinkableHeight))
+                    .frame(width: proxy.size.width, height: 250 + textOffset.height + (showText ? 0 : shrinkableHeight))
 
                 VStack(spacing: 0) {
                     Button(action: { showText.toggle() }) {
@@ -57,7 +57,6 @@ struct Triggers_Challenge1: View {
                         .padding(.horizontal)
                 }
                 .frame(maxWidth: .infinity)
-                .background(Color(.secondarySystemBackground))
                 .offset(y: textOffset.height)
             }
             .animation(.easeOut)

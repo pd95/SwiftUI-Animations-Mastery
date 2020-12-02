@@ -64,6 +64,7 @@ struct Transitions_Challenge2: View {
                 Image("person.sleeping")
                 Spacer()
             }
+            .padding()
             .animation(.easeIn(duration: 1))
             .onAppear(perform: {
                 show.toggle()

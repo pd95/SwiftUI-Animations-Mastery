@@ -9,17 +9,20 @@ import SwiftUI
 
 struct ParksSectionHeaderView: View {
     var body: some View {
-        ZStack(alignment: .bottom) {
-            Color(.systemBackground)
-                .opacity(0.8)
-
+        VStack {
             Text("UTAH  NATIONAL  PARKS")
                 .font(.body)
                 .fontWeight(.black)
                 .padding()
                 .frame(maxWidth: .infinity)
+                .background(
+                    Color(.systemBackground)
+                        .opacity(0.8)
+                        .edgesIgnoringSafeArea(.top)
+                )
+
+            Spacer()
         }
-        .frame(height: 100)
     }
 }
 

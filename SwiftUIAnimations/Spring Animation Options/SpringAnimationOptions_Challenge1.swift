@@ -31,8 +31,6 @@ struct SpringAnimationOptions_Challenge1: View {
                     .font(.largeTitle).bold()
                     .foregroundColor(Color("LightShade2"))
 
-                Spacer()
-
                 GeometryReader { proxy in
                     let size = proxy.frame(in: .local).size
                     HStack(spacing: 0) {
@@ -58,8 +56,6 @@ struct SpringAnimationOptions_Challenge1: View {
                     .frame(width: size.width * 3)
                 }
 
-                Spacer()
-
                 HStack(spacing: 30) {
                     ForEach(text.indices) { i in
                         Button(action: { selected = i }) {
@@ -68,7 +64,7 @@ struct SpringAnimationOptions_Challenge1: View {
                                 .accentColor(Color("LightShade2"))
                                 .padding(15)
                                 .background(Circle().fill(Color("Accent2")).shadow(radius: 10))
-                                .scaleEffect(selected == i ? 1 : 0.2)
+                                .scaleEffect(selected == i ? 1 : 0.5)
                                 .animation(Animation.interpolatingSpring(stiffness: 30, damping: 7, initialVelocity: 8))
                         }
                     }
@@ -87,6 +83,7 @@ struct SpringAnimationOptions_Challenge1: View {
                 .opacity(selected == text.count - 1 ? 1 : 0)
                 .animation(Animation.interpolatingSpring(stiffness: 50, damping: 7, initialVelocity: 7))
             }
+            .padding()
         }
     }
 }

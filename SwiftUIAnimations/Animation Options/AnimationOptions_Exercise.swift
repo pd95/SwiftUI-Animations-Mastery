@@ -71,6 +71,7 @@ struct AnimationOptions_Exercise: View {
                 Spacer()
                 Spacer()
             }
+            .padding()
             .font(.title)
         }
     }

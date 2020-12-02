@@ -40,6 +40,7 @@ struct BasicAnimations_Challenge2: View {
             .padding()
             .edgesIgnoringSafeArea(.bottom)
         }
+        .padding()
     }
 }
 

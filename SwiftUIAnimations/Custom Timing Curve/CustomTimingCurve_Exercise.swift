@@ -128,6 +128,7 @@ struct MenusView: View {
         .buttonStyle(ButtonStyleLightOutline())
     }
 }
+
 struct WelcomeBackView: View {
 
     @Binding var showMenus: Bool

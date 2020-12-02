@@ -99,6 +99,7 @@ struct ParkDetailView: View {
                     .animation(Animation.easeOut.delay(0.4))
                 }
             }
+            .padding(.top)
         }
         .onAppear() {
             show.toggle()

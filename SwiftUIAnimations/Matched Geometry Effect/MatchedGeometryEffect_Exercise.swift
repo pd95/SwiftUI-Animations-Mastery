@@ -14,21 +14,23 @@ struct MatchedGeometryEffect_Exercise: View {
 
     var body: some View {
         ScrollView {
-            LazyVStack(spacing: 12, pinnedViews: .sectionHeaders) {
-                Section(header: ParksSectionHeaderView()) {
-                    ForEach(parks) { park in
-                        ParksRowView(namespace: namespace, selectedPark: $selectedPark, park: park)
-                            .animation(.easeOut)
-                    }
+            ParksSectionHeaderView()
+                .hidden()
+            LazyVStack(spacing: 12) {
+                ForEach(parks) { park in
+                    ParksRowView(namespace: namespace, selectedPark: $selectedPark, park: park)
+                        .animation(.easeOut)
                 }
             }
         }
-        .edgesIgnoringSafeArea(.top)
         .overlay(
             Group {
                 if let park = selectedPark {
                     ParkDetailView(namespace: namespace, selectedPark: $selectedPark, park: park)
                         .animation(.easeOut)
+                }
+                else {
+                    ParksSectionHeaderView()
                 }
             }
         )

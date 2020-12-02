@@ -12,6 +12,7 @@ struct SwiftUIAnimationsApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .accentColor(.red)
         }
     }
 }
